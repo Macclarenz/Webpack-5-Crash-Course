@@ -1,0 +1,49 @@
+body {
+    background-color: grey;
+
+    .container h1 {
+        border-bottom: 2px solid black;
+        font-family: sans-serif;
+        font-size: 36px;
+        margin: 1em auto;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .container #myImg {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 200px;
+        width: 200px;
+    }
+
+    .joke-container {
+        font-family: sans-serif;
+        text-align: center;
+        width: fit-content;
+        margin: 1em auto;
+
+        #jokeP {
+            border: 2px solid black;         
+            font-size: 18px;
+            padding: 1em;
+        }
+
+        #moreJokes {
+            background-color: black;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 21px;
+            font-weight: 500;
+            padding: .5em 1em;
+            letter-spacing: 1px;
+            transition: all 350ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
